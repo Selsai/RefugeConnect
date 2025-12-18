@@ -8,6 +8,9 @@ Route::get('/', [IndexController::class, 'index'])
     ->name('home');
 
 Route::prefix('animaux')->group(function () {
+    Route::get('/mock', [AnimalController::class, 'addMockData'])
+        ->name('animals.mock');
+
     Route::get('/ajouter', [AnimalController::class, 'createStatic'])
         ->name('animals.create-static');
 

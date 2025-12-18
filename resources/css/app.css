@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: #f5f8fa;
+    background-color: #f5f8fa; /* fond maquette */
     color: #222;
 }
 
@@ -45,7 +45,7 @@ a:hover {
     margin-left: 16px;
 }
 
-/* Layout bloc */
+/* Layout bloc principal */
 
 .container {
     max-width: 1000px;
@@ -64,12 +64,14 @@ a:hover {
     font-size: 1.6rem;
 }
 
-/* Liste d’animaux */
+/* Bouton "Ajouter un animal" en haut à droite */
 
 .page-top-actions {
     text-align: right;
     margin-bottom: 16px;
 }
+
+/* Liste d’animaux (maquette "Nos animaux") */
 
 .animals-grid {
     display: flex;
@@ -94,6 +96,13 @@ a:hover {
     font-size: 1.1rem;
 }
 
+.animal-species,
+.animal-age,
+.animal-description {
+    margin: 2px 0;
+    font-size: 0.9rem;
+}
+
 .animal-actions {
     margin-top: 8px;
     font-size: 0.9rem;
@@ -103,7 +112,7 @@ a:hover {
     margin-right: 8px;
 }
 
-/* Fiche animal */
+/* Fiche d’un animal */
 
 .animal-detail {
     display: flex;

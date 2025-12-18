@@ -1,6 +1,6 @@
 <header class="header">
     <div class="header-left">
-        <img src="{{ asset('img/logo.png') }}" alt="RefugeConnect" class="logo">
+        <img src="{{ asset('images/logo.png') }}" alt="RefugeConnect" class="logo">
     </div>
 
     <div class="header-right">

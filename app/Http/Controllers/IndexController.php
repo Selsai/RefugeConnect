@@ -11,7 +11,7 @@ class IndexController extends Controller
     {
         $animals = Animal::all();
 
-        return view('home', [
+        return view('pages.home', [
             'animals' => $animals,
         ]);
     }

@@ -35,13 +35,6 @@ class AnimalController extends Controller
                     'description' => 'Un jeune chiot plein d’énergie qui adore courir et jouer dehors.',
                     'photo' => 'images/animaux/max.png',
                 ],
-                [
-                    'name' => 'Coquillette',
-                    'species' => 'Chien',
-                    'age' => 3,
-                    'description' => 'Une Shiba Inu vive et joyeuse, toujours prête à jouer et à explorer. Coquillette est curieuse, intelligente et très expressive, avec un petit caractère indépendant mais plein de tendresse pour ceux qu’elle aime.',
-                    'photo' => 'images/animaux/coquillette.png',
-                ],
             ];
 
             foreach ($mockData as $data) {
@@ -57,7 +50,7 @@ class AnimalController extends Controller
     {
         $animal = Animal::findOrFail($id);
 
-        return view('animals.show', [
+        return view('pages.show', [
             'animal' => $animal,
         ]);
     }

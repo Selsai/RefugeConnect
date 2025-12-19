@@ -85,12 +85,6 @@ main {
     text-align: center;
 }
 
-/* Bouton "Ajouter un animal" en haut à droite */
-
-.page-top-actions {
-    display: none;
-}
-
 /* Liste d'animaux (maquette "Nos animaux") */
 
 .animals-grid {

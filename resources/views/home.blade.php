@@ -6,10 +6,6 @@
     <section class="page-block">
         <h2 class="page-title">Nos animaux</h2>
 
-        <div class="page-top-actions">
-            <a href="{{ route('animals.create-static') }}">Ajouter un animal</a>
-        </div>
-
         @forelse ($animals as $animal)
             @if ($loop->first)
                 <div class="animals-grid">
